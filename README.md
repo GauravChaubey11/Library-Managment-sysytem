@@ -1,2 +1,3 @@
-# Library-Managment-sysytem
-Library Management System Project is basically updating the manual library system into an internet-based web application
+# Library-Managment-sysytem projct
+
+Library Management System Project.
