@@ -1,3 +1,3 @@
-# Library-Managment-sysytem projct
+# Library-Managment-system projct
 
 Library Management System Project.
