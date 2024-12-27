@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4169e1;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .welcome {
+            font-size: 18px;
+        }
+        .header .nav-buttons button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .header .nav-buttons button:hover {
+            background-color: #e0e0e0;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-section, .product-section {
+            background-color: #4169e1;
+            padding: 20px;
+            border-radius: 5px;
+            width: 48%;
+        }
+        .form-section input, .form-section button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-section input {
+            background-color: #d3d3d3;
+        }
+        .form-section button {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #e0e0e0;
+        }
+        .product-section {
+            background-color: #d3d3d3;
+            padding: 20px;
+        }
+        .product-section .product-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .product-section .product-header div {
+            background-color: #4169e1;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            width: 18%;
+        }
+        .product-section .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .product-section .product-item div {
+            background-color: #4169e1;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            width: 18%;
+        }
+        .product-section .product-item .actions {
+            display: flex;
+            justify-content: space-between;
+            width: 36%;
+        }
+        .product-section .product-item .actions button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            width: 48%;
+        }
+        .product-section .product-item .actions button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="welcome">Welcome 'Vendor Name'</div>
+            <div class="nav-buttons">
+                <button>Product Status</button>
+                <button>Request Item</button>
+                <button>View Product</button>
+                <button>Log Out</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="form-section">
+                <input type="text" placeholder="Product Name">
+                <input type="text" placeholder="Product Price">
+                <input type="file" placeholder="Product Image">
+                <button>Add The Product</button>
+            </div>
+            <div class="product-section">
+                <div class="product-header">
+                    <div>Product Image</div>
+                    <div>Product Name</div>
+                    <div>Product Price</div>
+                    <div>Action</div>
+                </div>
+                <div class="product-item">
+                    <div>Image</div>
+                    <div>Image Name</div>
+                    <div>Rs/-</div>
+                    <div class="actions">
+                        <button>Delete</button>
+                        <button>Update</button>
+                    </div>
+                </div>
+                <!-- Repeat the product-item div for each product -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

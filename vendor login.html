@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #b0b0b0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+        .header {
+            background-color: #add8e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .button {
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #5a9bd3;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .input-group label {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+        }
+        .input-group input {
+            background-color: #add8e6;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: calc(100% - 120px);
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+        .footer button {
+            background-color: #a9a9a9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .footer button:hover {
+            background-color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Event Management System</h1>
+        </div>
+        <div class="input-group">
+            <label for="userid">User Id</label>
+            <input type="text" id="userid" value="Vendor">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" value="Vendor">
+        </div>
+        <div class="footer">
+            <button class="button">CHART</button>
+            <button class="button">BACK</button>
+        </div>
+        <div class="footer">
+            <button>Cancel</button>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>
